@@ -1,0 +1,16 @@
+{
+  "name": "locale_modules-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "my-module": "^1.0.0"
+  },
+  "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git",
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Arnaud Rinquin",
+  "license": "ISC"
+}
