@@ -12,5 +12,5 @@
     "start": "node index.js"
   },
   "author": "Arnaud Rinquin",
-  "license": "ISC"
+  "license": "MIT"
 }
