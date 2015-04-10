@@ -1,0 +1,12 @@
+{
+  "name": "my-other-module",
+  "version": "1.0.0",
+  "description": "My other module that does not do much",
+  "main": "index.js",
+  "author": "Arnaud Rinquin",
+  "license": "MIT",
+  "dependencies": {
+    "underscore": "^1.8.3"
+  },
+  "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git"
+}
