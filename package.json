@@ -4,8 +4,10 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "lodash": "^2.0.0",
     "my-module": "file:local_modules/my-module",
-    "my-other-module": "file:local_modules/my-other-module"
+    "my-other-module": "file:local_modules/my-other-module",
+    "underscore": "file:local_modules/underscore"
   },
   "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git",
   "devDependencies": {},
