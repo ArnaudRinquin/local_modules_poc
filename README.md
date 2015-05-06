@@ -39,4 +39,4 @@ _Note: This apps does nothing useful, it'll just print a useless array._
 
 ## Cons
 
-* The `npm update` of local module is [broken at the moment](https://github.com/npm/npm/issues/7426). Fingers crossed we can have it soon.
+* ~~The `npm update` of local module is [broken at the moment](https://github.com/npm/npm/issues/7426). Fingers crossed we can have it soon.~~ Fixed! And available since `npm 2.9.0` / `iojs 2.0.0`.

@@ -1,5 +1,5 @@
 {
-  "name": "my-module",
+  "name": "my-custom-module",
   "version": "1.0.0",
   "description": "My module that does not do much",
   "main": "index.js",
