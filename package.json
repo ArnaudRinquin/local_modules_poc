@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": ">=4 <5"
+  },
   "dependencies": {
     "lodash": "^2.0.0",
     "my-custom-module": "file:local_modules/my-custom-module",
@@ -10,10 +13,13 @@
     "underscore": "file:local_modules/underscore"
   },
   "repository": "git@github.com:ArnaudRinquin/local_modules_poc.git",
-  "devDependencies": {},
   "scripts": {
+    "preinstall": "rm-local-modules -v",
     "start": "node index.js"
   },
   "author": "Arnaud Rinquin",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "rm-local-modules": "0.0.1"
+  }
 }

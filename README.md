@@ -13,6 +13,8 @@ npm install
 npm start
 ```
 
+_Note: if you run npm 3+, you need to remove the `preinstall` script in package.json
+
 _Note: This apps does nothing useful, it'll just print a useless array._
 
 ## Writing new sub modules
@@ -31,6 +33,23 @@ _Note: This apps does nothing useful, it'll just print a useless array._
 * Bump your sub-module version in its `package.json` (important)
 * Simply run `npm update` or `npm update my-module`
 
+**Or**
+
+Use `rm-local-modules` as `preinstall` script and simply run `npm install`:
+
+```js
+// package.json
+{
+  "devDependencies": {
+    "rm-local-modules": "0.0.0"
+  },
+  "scripts": {
+    "preinstall": "rm-local-modules"
+  }
+}
+```
+
+
 ## Pros
 
 * No dirty hack, `require()` wrapper, `../../../` paths, but pure `npm`
@@ -40,3 +59,4 @@ _Note: This apps does nothing useful, it'll just print a useless array._
 ## Cons
 
 * ~~The `npm update` of local module is [broken at the moment](https://github.com/npm/npm/issues/7426). Fingers crossed we can have it soon.~~ Fixed! And available since `npm 2.9.0` / `iojs 2.0.0`.
+* [A bug in `npm 3+`](https://github.com/npm/npm/issues/10379) broke the `preinstall` lifecyle and the `rm-local-modules` in `prescript` trick doesn't work.
