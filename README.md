@@ -1,6 +1,6 @@
 # local_modules usage Proof of Concept
 
-Just a proof of concept of using `local_modules` to to solve the ["Better local require() paths"](https://gist.github.com/branneman/8048520) problem.
+Just a proof of concept of using `local_modules` to solve the ["Better local require() paths"](https://gist.github.com/branneman/8048520) problem.
 
 It also helps you write true re-usable sub-modules.
 
